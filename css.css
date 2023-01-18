@@ -1,0 +1,162 @@
+span#submit {
+  padding: 5px 10px;
+  font-size: 0.91em;
+  border-radius: 5px;
+  cursor: not-allowed;
+  border: 1px solid #999;
+  background-color: #eee;
+  font-family: sans-serif;
+  font-variant: small-caps;
+}
+
+.carousel {
+  width: 450px;
+  height: 450px;
+  overflow: hidden;
+  position: relative;
+  margin: auto;
+  cursor: not-allowed;
+}
+
+.carousel img {
+  width: 450px; 
+  height: 450px;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 0.5s ease-in-out;
+}
+
+.carousel img.active {
+  opacity: 1;
+}
+
+.carousel img.inactive {
+  opacity: 0;
+}
+
+.carousel-controls {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.carousel-controls button {
+  background-color: #f1f1f1;
+  border: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.carousel-controls button:hover {
+  background-color: #ddd;
+}
+
+.spacer {
+  text-align: center;
+  margin-top: 90px;;
+}
+
+body{
+  position: relative;
+  min-height: 100vh;
+}
+
+#content-wrap {
+  padding-bottom: 3.5rem;
+}
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 3.5rem; 
+  background-color: #d3ebf3;
+  text-align: center;
+  margin: auto;
+
+    
+}
+
+.flex-container {
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex-container {
+  background-color: #f1f1f1;
+  width: auto;
+  margin: auto;
+  text-align: justify;
+  line-height: 75px;
+  font-size: 30px;
+}
+
+.zap {
+  width: auto;
+  height: auto;
+  text-align: right;
+}
+
+.fixa {
+  position: fixed;
+  right: 20px; /* distância da direita */
+  bottom: 50%; /* distância do rodapé */
+  width: 150px; /* largura da imagem */
+}
+
+.image-container {
+  position: relative; /* permite posicionar o balão em relação à imagem */
+}
+.image-info {
+  position: fixed; /* permite posicionar o balão em relação à imagem */
+  bottom: 50%; /* posiciona o balão logo acima da imagem */
+  right: 20px;
+  width: 150px;
+  transform: translateX(-50%); /* centraliza o balão horizontalmente */
+  background-color: rgba(197, 238, 238, 0.548); /* define a cor de fundo do balão */
+  color: rgb(0, 0, 0); /* define a cor do texto do balão */
+  padding: 8px; /* define o espaçamento interno do balão */
+  border-radius: 8px; /* define o arredondamento das bordas do balão */
+  visibility: hidden; /* oculta o balão por padrão */
+}
+
+.image-container:hover .image-info {
+  visibility: visible; /* mostra o balão quando o mouse estiver sobre a imagem */
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 5px;
+  background-color: #ffffff;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+.image-container {
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: auto;
+  height: auto;
+  opacity: 0;
+}
+
+.container {
+  width: 80%; /*define o tamanho do elemento*/
+  margin: 0 auto; /*centraliza o elemento*/
+  text-align: center; /* centraliza o conteudo dentro do elemento*/
+}
